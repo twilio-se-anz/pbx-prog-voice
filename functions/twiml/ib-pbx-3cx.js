@@ -4,7 +4,7 @@ exports.handler = function(context, event, callback) {
 
   console.log(`Entered ${context.PATH} node version ${process.version} twilio version ${twilio_version}`);
 
-  // Define PBX SIP domain
+  // Define PBX SIP domain (configured in .env file)
   const sip_domain = context.SIP_DOMAIN
 
   // Using Inbound Phone number on PBX
